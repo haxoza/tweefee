@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="{{ static_url('style.css') }}" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{ static_url('twitter-text.js') }}"></script>
+  <script src="{{ static_url('tweefeed.js') }}"></script>
+  <script>
+    $(document).ready(function () {
+      var tweeFeed = new TweeFeed(location.hostname, location.port, "{{websocket_path}}", {{history.maxlen}});
+      tweeFeed.init();
+    });
+  </script>
+</head>
+<body>
+  <div id="tweefeed"></div>
+</body>
+</html>
