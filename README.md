@@ -17,7 +17,7 @@ Then enter to the project directory and install dependencies:
 
 `$ pip install -r requirements.txt`
 
-Now you need to [set up Twitter app]((https://apps.twitter.com/)) in order to get API keys to be able to
+Now you need to [set up Twitter app](https://apps.twitter.com/) in order to get API keys to be able to
 query Twitter API.
 
 Then you also need access token. To get it you should go into Twitter app details, choose Key and Access Tokens tab
