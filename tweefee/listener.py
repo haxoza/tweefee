@@ -89,7 +89,9 @@ def main():
         consumer_url=options.consumer_url,
         hash_tags=options.hash_tags,
     )
-    feed.listener.send(list(feed.get_tweets(50)))
+    tweets = list(feed.get_tweets(50))
+    tweets.reverse()
+    feed.listener.send(tweets)
     feed.start_stream()
 
 
