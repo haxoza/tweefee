@@ -12,15 +12,13 @@
     zoom: 1;
 }
 
-a,
-a:hover {
+a, a:hover {
   color: #f9bf3b;
   text-decoration: none;
 }
 
 
 #tweefeed {
-    width: 1000px;
     margin: 0 auto;
     color: #393939;
     line-height: 1.4em;
@@ -37,11 +35,10 @@ a:hover {
 .tweet .avatar {
     float: left;
     width: 48px;
+    padding: 0 10px;
 }
 
 .tweet .name {
-    float: left;
-    width: 942px;
     margin-left: 10px;
 }
 
@@ -62,8 +59,6 @@ a:hover {
 }
 
 .tweet .text {
-    float: left;
-    width: 942px;
     margin: 4px 0 0 10px;
     padding: 0;
 }
